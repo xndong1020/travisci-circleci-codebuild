@@ -5,7 +5,8 @@ var router = express.Router();
 router.get("/", function(req, res, next) {
   res.render("index", {
     title: "Express",
-    change: "Add manual approval to CodePipeline"
+    change: "Add manual approval to CodePipeline",
+    port: process.env.PORT
   });
 });
 
