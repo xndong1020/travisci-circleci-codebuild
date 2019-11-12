@@ -1,5 +1,7 @@
 ### My First project hosted in CodeCommit
 
+[![Coverage Status](https://coveralls.io/repos/github/xndong1020/travisci-circleci-codebuild/badge.svg?branch=master)](https://coveralls.io/github/xndong1020/travisci-circleci-codebuild?branch=master)
+
 ## How to clone a project from CodeCommit
 
 # Step 01
