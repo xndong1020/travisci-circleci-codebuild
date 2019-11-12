@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha \"{.,!(node_modules)/**}/*.spec.js\""
+    "test": "nyc --reporter=html --reporter=text mocha \"{.,!(node_modules)/**}/*.spec.js\"",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^3.0.7",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "supertest": "^4.0.2"
